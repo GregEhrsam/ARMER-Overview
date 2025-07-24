@@ -1,1 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMER: Minnesota's Critical Communications Lifeline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-blue-900">ARMER: Minnesota's Lifeline</h1>
+            <p class="text-sm md:text-base text-gray-600">A Strategic Analysis of the 2025 System Upgrade Agreement Decision</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-8">
+
+        <section id="overview" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-2">A Unified Communications Backbone</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">The Allied Radio Matrix for Emergency Response (ARMER) is more than just a network; it's the critical infrastructure that connects and protects Minnesota's first responders and citizens. It ensures seamless, real-time communication across every county, every day.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl font-black text-blue-600">95K</div>
+                    <p class="mt-2 font-semibold text-gray-700">Active Radios</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl font-black text-blue-600">87</div>
+                    <p class="mt-2 font-semibold text-gray-700">Counties Covered</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl font-black text-blue-600">435+</div>
+                    <p class="mt-2 font-semibold text-gray-700">Tower Sites</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <div class="text-5xl font-black text-blue-600">99.9%</div>
+                    <p class="mt-2 font-semibold text-gray-700">System Availability</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="investment" class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <h2 class="text-3xl font-extrabold text-blue-800 mb-4 text-center">A History of Investment: Building the Backbone</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">ARMER is the result of a multi-decade, >$500M public investment, creating a critical state asset with an estimated replacement value now exceeding $800 million. This strategic commitment has built a nationally recognized model for public safety communications.</p>
+            <div class="relative">
+                <div class="border-l-4 border-blue-300 absolute h-full top-0 left-4 md:left-1/2 md:-ml-0.5"></div>
+                <div class="space-y-12">
+                    <div class="relative flex items-center md:justify-normal md:odd:flex-row-reverse">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold absolute left-4 -ml-4 md:left-1/2 md:-ml-4">1</div>
+                        <div class="ml-12 md:ml-0 md:w-[calc(50%-2rem)] md:pl-8 md:odd:pr-8 md:odd:pl-0">
+                            <div class="bg-blue-50 rounded-lg shadow p-4">
+                                <h3 class="font-bold text-blue-900">1995-2002: The Metro Foundation</h3>
+                                <p class="text-sm text-gray-700">Phase 1 establishes the core system in the Twin Cities metro area.</p>
+                                <p class="text-lg font-bold text-blue-700 mt-2">$97.35M Invested</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center md:justify-normal md:odd:flex-row-reverse">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold absolute left-4 -ml-4 md:left-1/2 md:-ml-4">2</div>
+                        <div class="ml-12 md:ml-0 md:w-[calc(50%-2rem)] md:pl-8 md:odd:pr-8 md:odd:pl-0">
+                            <div class="bg-blue-50 rounded-lg shadow p-4">
+                                <h3 class="font-bold text-blue-900">2007: Statewide Expansion</h3>
+                                <p class="text-sm text-gray-700">Legislature authorizes revenue bonds to build the ARMER backbone in the remaining 55 counties.</p>
+                                <p class="text-lg font-bold text-blue-700 mt-2">$186M in Bonds</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center md:justify-normal md:odd:flex-row-reverse">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold absolute left-4 -ml-4 md:left-1/2 md:-ml-4">3</div>
+                        <div class="ml-12 md:ml-0 md:w-[calc(50%-2rem)] md:pl-8 md:odd:pr-8 md:odd:pl-0">
+                            <div class="bg-blue-50 rounded-lg shadow p-4">
+                                <h3 class="font-bold text-blue-900">2021: Debt Retired</h3>
+                                <p class="text-sm text-gray-700">Original construction bonds are fully paid off, freeing up capacity in the 911 fund for future needs like the SUA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center md:justify-normal md:odd:flex-row-reverse">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold absolute left-4 -ml-4 md:left-1/2 md:-ml-4">4</div>
+                        <div class="ml-12 md:ml-0 md:w-[calc(50%-2rem)] md:pl-8 md:odd:pr-8 md:odd:pl-0">
+                            <div class="bg-blue-50 rounded-lg shadow p-4">
+                                <h3 class="font-bold text-blue-900">2021-2025: System Modernization</h3>
+                                <p class="text-sm text-gray-700">State secures the 5-year System Upgrade Agreement (SUA) to proactively manage the system's lifecycle.</p>
+                                <p class="text-lg font-bold text-blue-700 mt-2">$31.7M Agreement</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative flex items-center md:justify-normal md:odd:flex-row-reverse">
+                        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-blue-600 text-white font-bold absolute left-4 -ml-4 md:left-1/2 md:-ml-4">5</div>
+                        <div class="ml-12 md:ml-0 md:w-[calc(50%-2rem)] md:pl-8 md:odd:pr-8 md:odd:pl-0">
+                            <div class="bg-blue-50 rounded-lg shadow p-4">
+                                <h3 class="font-bold text-blue-900">2024-2026: Subscriber Support</h3>
+                                <p class="text-sm text-gray-700">A grant program is established to assist local, tribal, and state agencies with purchasing new ARMER-compatible radios.</p>
+                                <p class="text-lg font-bold text-blue-700 mt-2">$4M in Grants</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="adoption" class="mb-12">
+             <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-2">Universal Adoption: A Truly Statewide Network</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">ARMER's success is defined by its near-universal adoption. It has become the common platform connecting virtually every responder in Minnesota, breaking down historical barriers to communication.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">Participation Rate by Agency Type</h3>
+                 <div class="chart-container h-80 md:h-96">
+                    <canvas id="adoptionRateChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="value" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-2">Proven in Crisis: The I-35W Bridge Collapse</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">On August 1, 2007, ARMER faced its ultimate test. As commercial networks failed, ARMER performed flawlessly, enabling a coordinated response that saved lives and knitted responders "together into one functional unit."</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-4 text-center">System Performance in the First Hour</h3>
+                <div class="chart-container h-80 md:h-96">
+                    <canvas id="bridgeCollapseChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="sua-value" class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <h2 class="text-3xl font-extrabold text-blue-800 mb-4 text-center">The Value of Managed Support</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">The System Upgrade Agreement provides predictable costs and prevents expensive, reactive repairs. Analysis of the 2021-2025 SUA shows it is a fiscally responsible strategy that delivers significant savings.</p>
+            <div class="text-center mb-8">
+                <p class="text-gray-700 text-lg">Estimated State Savings by Choosing SUA:</p>
+                <div class="text-6xl font-black text-green-600 my-2">$17.7 Million</div>
+                <p class="text-gray-600">...compared to a reactive "time and materials" approach over 5 years.</p>
+            </div>
+            <div class="chart-container h-80 md:h-96">
+                <canvas id="suaCostComparisonChart"></canvas>
+            </div>
+        </section>
+
+        <section id="cost-of-delay" class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <h2 class="text-3xl font-extrabold text-red-800 mb-4 text-center">The High Cost of Delay: Parking the System</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Forgoing the SUA is not a cost-saving measure; it's a deferral of much higher costs. A neglected system becomes exponentially more expensive to fix, and a full replacement would require a catastrophic, unbudgeted appropriation.</p>
+            <div class="chart-container h-80 md:h-96">
+                <canvas id="costOfDelayChart"></canvas>
+            </div>
+             <p class="text-center mt-4 text-sm text-gray-600">Delaying renewal introduces premium costs for obsolete parts, emergency labor, and the need to catch up on multiple missed upgrade cycles, erasing any perceived short-term savings.</p>
+        </section>
+        
+        <section id="sua" class="mb-12">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-blue-800 mb-2">The 2025 Strategic Decision</h2>
+                <p class="max-w-3xl mx-auto text-gray-600">Minnesota faces a critical choice: renew the System Upgrade Agreement (SUA) to ensure ARMER's future, or "park the system" and accept the immense risks of obsolescence.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">What the SUA Delivers: 2021-2025</h3>
+                    <p class="text-gray-600 mb-4">The SUA is not just a maintenance contract; it's a strategic investment in technology, security, and reliability. The current $31.7M agreement provides tangible goods and services.</p>
+                    <div class="chart-container h-64">
+                        <canvas id="suaBreakdownChart"></canvas>
+                    </div>
+                    <p class="text-center mt-4 text-sm text-gray-600">This agreement also included delivery of 1,350 Juniper routers, 900 computers, and over 70 server/switch appliances.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Decision Matrix: Renew vs. Park</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-lg bg-blue-50">
+                            <h4 class="font-bold text-blue-800">✅ Renew SUA</h4>
+                            <ul class="list-disc list-inside text-gray-700 text-sm mt-2">
+                                <li>Predictable, managed costs</li>
+                                <li>Maintains 99.9% uptime</li>
+                                <li>Proactive cybersecurity</li>
+                                <li>Maximum responder & public safety</li>
+                                <li>Protects >$800M state asset</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 rounded-lg bg-red-50">
+                             <h4 class="font-bold text-red-800">❌ "Park the System"</h4>
+                             <ul class="list-disc list-inside text-gray-700 text-sm mt-2">
+                                <li>Unpredictable, high-cost repairs</li>
+                                <li>Degrading reliability & system failure</li>
+                                <li>Extreme cybersecurity vulnerability</li>
+                                <li>Compromised safety for all</li>
+                                <li>Jeopardizes entire state investment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendation" class="bg-blue-800 text-white rounded-lg shadow-lg p-8 md:p-10 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">The Path Forward: A Clear Recommendation</h2>
+            <p class="max-w-3xl mx-auto text-blue-100 mb-6">The financial, operational, and public safety risks of "parking the system" are unacceptable. The evidence overwhelmingly supports one path to protect our citizens, first responders, and our state's substantial investment.</p>
+            <div class="bg-white text-blue-900 rounded-lg p-6 inline-block shadow-xl">
+                <p class="text-xl font-bold">Proceed with negotiating the 2026-2030 System Upgrade Agreement.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-6 bg-gray-200">
+        <p class="text-sm text-gray-600">&copy; 2025 State of Minnesota. For informational purposes only.</p>
+    </footer>
+
+    <script>
+        function wrapText(str) {
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            const maxChars = 16;
+
+            words.forEach(word => {
+                if ((currentLine + word).length > maxChars) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const brilliantBlues = {
+            background: 'rgba(1, 99, 176, 0.2)',
+            border: 'rgba(1, 99, 176, 1)',
+            accent1: 'rgba(0, 159, 227, 1)',
+            accent1Bg: 'rgba(0, 159, 227, 0.2)',
+            accent2: 'rgba(0, 174, 239, 1)',
+            accent2Bg: 'rgba(0, 174, 239, 0.2)',
+            accent3: 'rgba(146, 208, 80, 1)',
+            accent3Bg: 'rgba(146, 208, 80, 0.2)',
+            text: '#022140',
+            bad: 'rgba(220, 38, 38, 1)',
+            badBg: 'rgba(220, 38, 38, 0.2)',
+            warn: 'rgba(245, 158, 11, 1)',
+            warnBg: 'rgba(245, 158, 11, 0.2)'
+        };
+
+        const bridgeCollapseCtx = document.getElementById('bridgeCollapseChart').getContext('2d');
+        new Chart(bridgeCollapseCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Radios Logged On', 'Transmission Requests', 'Airtime Minutes Used'],
+                datasets: [{
+                    label: 'System Traffic',
+                    data: [16000, 27000, 2500],
+                    backgroundColor: [brilliantBlues.accent1Bg, brilliantBlues.accent2Bg, brilliantBlues.background],
+                    borderColor: [brilliantBlues.accent1, brilliantBlues.accent2, brilliantBlues.border],
+                    borderWidth: 2
+                },
+                {
+                    label: 'Normal Peak Hour (Est.)',
+                    data: [8000, 13500, 1250],
+                    backgroundColor: 'rgba(200, 200, 200, 0.2)',
+                    borderColor: 'rgba(150, 150, 150, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: false },
+                    legend: { position: 'bottom' },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    y: { beginAtZero: true, ticks: { color: brilliantBlues.text }, grid: { color: '#e0e0e0' } },
+                    x: { ticks: { color: brilliantBlues.text } }
+                }
+            }
+        });
+        
+        const adoptionRateCtx = document.getElementById('adoptionRateChart').getContext('2d');
+        new Chart(adoptionRateCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Law Enforcement', 'Fire Departments', 'Emergency Medical Services'],
+                datasets: [{
+                    label: 'Participation Rate (%)',
+                    data: [98.8, 89.6, 91.9],
+                    backgroundColor: [brilliantBlues.accent1Bg, brilliantBlues.accent2Bg, brilliantBlues.background],
+                    borderColor: [brilliantBlues.accent1, brilliantBlues.accent2, brilliantBlues.border],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: false },
+                    legend: { display: false },
+                    tooltip: { callbacks: { title: tooltipTitleCallback } }
+                },
+                scales: {
+                    x: { beginAtZero: true, max: 100, ticks: { color: brilliantBlues.text, callback: (value) => value + '%' }, grid: { color: '#e0e0e0' } },
+                    y: { ticks: { color: brilliantBlues.text } }
+                }
+            }
+        });
+
+        const suaBreakdownCtx = document.getElementById('suaBreakdownChart').getContext('2d');
+        new Chart(suaBreakdownCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Core Upgrades & Services', 'Dedicated Field Service', '24/7 Tech Support', 'Security Updates'],
+                datasets: [{
+                    data: [29.31, 1.22, 0.84, 0.32],
+                    backgroundColor: [brilliantBlues.border, brilliantBlues.accent1, brilliantBlues.accent2, brilliantBlues.accent3],
+                    borderColor: '#ffffff',
+                    borderWidth: 4,
+                    hoverOffset: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: '2021-2025 SUA Cost Breakdown ($M)',
+                        color: brilliantBlues.text,
+                        font: { size: 14, weight: 'bold' }
+                    },
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback,
+                            label: function(context) {
+                                let label = context.label || '';
+                                if (label) { label += ': '; }
+                                if (context.parsed !== null) { label += '$' + context.parsed.toFixed(2) + 'M'; }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        const suaCostComparisonCtx = document.getElementById('suaCostComparisonChart').getContext('2d');
+        new Chart(suaCostComparisonCtx, {
+            type: 'bar',
+            data: {
+                labels: [wrapText('Negotiated SUA (2021-2025)'), wrapText('Estimated "Time & Materials" Cost')],
+                datasets: [{
+                    label: '5-Year Cost in Millions ($)',
+                    data: [31.7, 49.4],
+                    backgroundColor: [brilliantBlues.accent3Bg, brilliantBlues.badBg],
+                    borderColor: [brilliantBlues.accent3, brilliantBlues.bad],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: false },
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback,
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) { label += ': '; }
+                                if (context.parsed.y !== null) { label += '$' + context.parsed.y.toFixed(1) + 'M'; }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: { beginAtZero: true, ticks: { color: brilliantBlues.text, callback: (value) => '$' + value + 'M' }, grid: { color: '#e0e0e0' } },
+                    x: { ticks: { color: brilliantBlues.text } }
+                }
+            }
+        });
+
+        const costOfDelayCtx = document.getElementById('costOfDelayChart').getContext('2d');
+        new Chart(costOfDelayCtx, {
+            type: 'bar',
+            data: {
+                labels: [wrapText('Proactive SUA Renewal (Est. 2026)'), wrapText('Delayed Renewal (Est. 2030)'), wrapText('Full System Replacement')],
+                datasets: [{
+                    label: 'Estimated Cost in Millions ($)',
+                    data: [40, 85, 800],
+                    backgroundColor: [brilliantBlues.accent3Bg, brilliantBlues.warnBg, brilliantBlues.badBg],
+                    borderColor: [brilliantBlues.accent3, brilliantBlues.warn, brilliantBlues.bad],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: false },
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback,
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) { label += ': '; }
+                                if (context.parsed.y !== null) { label += '$' + context.parsed.y + 'M'; }
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: { 
+                        type: 'logarithmic',
+                        beginAtZero: true, 
+                        ticks: { 
+                            color: brilliantBlues.text,
+                            callback: function(value, index, values) {
+                                if (value === 1000 || value === 100 || value === 10 || value === 1) {
+                                    return '$' + value + 'M';
+                                }
+                                if (value === 800) return '$800M';
+                                if (value === 85) return '$85M';
+                                if (value === 40) return '$40M';
+                                return null;
+                            }
+                        }, 
+                        grid: { color: '#e0e0e0' } 
+                    },
+                    x: { ticks: { color: brilliantBlues.text } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
 
