@@ -162,6 +162,48 @@
             </div>
         </section>
 
+        <section id="obsolescence-timeline" class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <h2 class="text-3xl font-extrabold text-red-800 mb-4 text-center">The Slippery Slope of Obsolescence</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">"Parking the system" is not a single event; it's the start of a rapid, predictable decline in reliability and security. This timeline shows the escalating consequences of forgoing the SUA.</p>
+            <div class="mt-8">
+                <div class="flex flex-col md:flex-row -mx-4">
+                    <div class="md:w-1/3 px-4 mb-8 md:mb-0">
+                        <div class="p-4 bg-yellow-100 border-l-4 border-yellow-500 rounded-r-lg">
+                            <h3 class="font-bold text-yellow-800">2026-2028: Standard Support</h3>
+                            <ul class="mt-2 text-sm text-yellow-700 list-disc list-inside">
+                                <li>Current SUA ends Dec 31, 2025.</li>
+                                <li>GEN1 GTR component support ends Jan 1, 2026.</li>
+                                <li>MN becomes responsible for all GEN1 replacement parts.</li>
+                                <li>Bundled service discounts are lost.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 px-4 mb-8 md:mb-0">
+                        <div class="p-4 bg-orange-100 border-l-4 border-orange-500 rounded-r-lg">
+                            <h3 class="font-bold text-orange-800">2028-2031: Extended Support</h3>
+                             <ul class="mt-2 text-sm text-orange-700 list-disc list-inside">
+                                <li>Standard support ends Aug 2028.</li>
+                                <li>System can no longer be expanded.</li>
+                                <li>All software defect repair ends.</li>
+                                <li>Cybersecurity & antivirus services end.</li>
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="md:w-1/3 px-4">
+                        <div class="p-4 bg-red-100 border-l-4 border-red-500 rounded-r-lg">
+                            <h3 class="font-bold text-red-800">2032 & Beyond: End of Life</h3>
+                             <ul class="mt-2 text-sm text-red-700 list-disc list-inside">
+                                <li>Extended support ends Aug 2031.</li>
+                                <li>Prime Site and technical support ends.</li>
+                                <li>MCC7500 Dispatch Console support ends.</li>
+                                <li>The system becomes functionally obsolete and insecure.</li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="cost-of-delay" class="mb-12 bg-white rounded-lg shadow-lg p-6 md:p-8">
             <h2 class="text-3xl font-extrabold text-red-800 mb-4 text-center">The High Cost of Delay: Parking the System</h2>
             <p class="text-center text-gray-600 mb-8 max-w-3xl mx-auto">Forgoing the SUA is not a cost-saving measure; it's a deferral of much higher costs. A neglected system becomes exponentially more expensive to fix, and a full replacement would require a catastrophic, unbudgeted appropriation.</p>
@@ -267,7 +309,11 @@
             bad: 'rgba(220, 38, 38, 1)',
             badBg: 'rgba(220, 38, 38, 0.2)',
             warn: 'rgba(245, 158, 11, 1)',
-            warnBg: 'rgba(245, 158, 11, 0.2)'
+            warnBg: 'rgba(245, 158, 11, 0.2)',
+            orange: 'rgba(249, 115, 22, 1)',
+            orangeBg: 'rgba(249, 115, 22, 0.2)',
+            yellow: 'rgba(234, 179, 8, 1)',
+            yellowBg: 'rgba(234, 179, 8, 0.2)'
         };
 
         const bridgeCollapseCtx = document.getElementById('bridgeCollapseChart').getContext('2d');
@@ -467,4 +513,3 @@
     </script>
 </body>
 </html>
-
